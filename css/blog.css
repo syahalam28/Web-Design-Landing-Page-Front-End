@@ -1,0 +1,190 @@
+@font-face {
+  font-family: portofolio;
+  src: url(../Font/Dolphin\ Bold.ttf);
+}
+
+h2 {
+  font-family: portofolio;
+  font-size: 50px;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-top: -70px;
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.portofolio .img-thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+.portofolio .img-thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.button {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.button.active {
+  background-color: #666;
+  color: white;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+h3 {
+  overflow: hidden;
+  text-align: center;
+}
+h3:before,
+h3:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+@font-face {
+  font-family: portofolio;
+  src: url(../Font/Dolphin\ Bold.ttf);
+}
+
+.navbar {
+  position: relative;
+
+  z-index: 9999;
+}
+.navbar-brand {
+  font-family: viga;
+  font-size: 32px;
+}
+/*Navbar*/
+
+.navbar {
+  position: relative;
+  z-index: 99999;
+}
+.navbar-brand {
+  font-family: viga;
+  font-size: 32px;
+}
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/*Info panel*/
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+}
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.blog {
+  margin: 20px;
+  font-size: 15px;
+  color: #666;
+}
+
+.blog:hover {
+  content: "";
+
+  border-bottom: 3px solid lightslategray;
+
+  color: #666;
+}
+
+/*Desktop Version Responsi*/
+@media (max-width: 800px) {
+  .carousel {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid lightslategray;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .workingspace {
+    text-align: left;
+  }
+}
